@@ -7,7 +7,7 @@ var sportsArray = ["Football", "Soccer", "Baseball", "Basketball", "Golf", "Skii
 
 var query = "Football";
 var api_key = "&api_key=kMnuDOL0eSkaqR86tiRWyDEps5Y2T4Wc";
-var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + query + api_key;
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + query + api_key;
 
 //This is the ajax call to search the giphy database with the above queryURL and my api key
 $.ajax({
