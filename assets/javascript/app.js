@@ -1,21 +1,28 @@
 // Decide on a topic
 // Sports
-// Make an array with ~20 types of buttons that fall within the topic
+// Make an array with ~10 types of sports
+var sportsArray = ["Football", "Soccer", "Baseball", "Basketball", "Golf", "Skiing", "Snowboarding", "Hockey", "Lacrosse"]
+
 
 
 var query = "Football";
 var api_key = "&api_key=kMnuDOL0eSkaqR86tiRWyDEps5Y2T4Wc";
 var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + query + api_key;
 
-
+//This is the ajax call to search the giphy database with the above queryURL and my api key
 $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function (response) {
     console.log(response);
 
-
 });
+
+//This for loop will loop through the sportsArray and dynamically create buttons for each index point and push them to the "buttonsHere" id div
+for (var i = 0; i < sportsArray.length; i++) {
+    $("#buttonsHere").html(sportsArray);
+
+}
     // Create and save a reference to new empty table row
       //var tableRow = $("<tr>");
     // Create and save references to 3 td elements containing the Title, Year, and Actors from the AJAX response object
