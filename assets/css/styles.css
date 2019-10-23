@@ -1,0 +1,20 @@
+
+#buttonsHere {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: rgb(27, 78, 12);
+}
+
+button {
+    margin: .25em;
+}
+
+#addNewButtonArea {
+    text-align: center;
+    background: rgb(15, 129, 25);
+}
+
+#gifsHere {
+    background: rgb(112, 103, 103) 89, 89);
+}
